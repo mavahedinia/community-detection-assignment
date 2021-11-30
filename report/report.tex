@@ -232,13 +232,16 @@ Furthermore, it can be concluded from Figure~\ref{fig:exec-time} that parameter 
 
 Finally, Figure~\ref{fig:per-n} shows that by increasing size of the network, performance of the Louvain algorithm. This might be a result of the badly connected communities emerged in Louvain steps, which is guaranteed to be solved in Leiden algorithm \cite{leiden}. In spite of the fact that Leiden algorithm is derived from Louvain, Leiden does not show this pattern. Thus experimental data supports this argument.
 
-To sum up, if $N$ (size of the network) is small enough, it is suggested to use Simulated Annealing algorithm, unless the network is not connected. In this case, Leiden has exhibited promising performance. It is also suggested to use Leiden algorithm for large networks.
 
 \begin{figure}[H]
 	\includegraphics[width=\linewidth]{exec_time.png}
 	\caption{average execution time for test cases where $\textlangle k \textrangle = 10$}
 	\label{fig:exec-time}
 \end{figure}
+
+\section{Conclusion}
+
+To sum up, if $N$ (size of the network) is small enough, it is suggested to use Simulated Annealing algorithm, unless the network is not connected. In this case, Leiden has exhibited promising performance. It is also suggested to use Leiden algorithm for large networks.
 
 
 %---------------------------------------------------------------------------
